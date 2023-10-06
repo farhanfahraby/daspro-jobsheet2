@@ -19,7 +19,7 @@ public class pemilihan2percobaan318 {
             tax = 0.2;
          netsalary = (int)( income - (tax*income));
         System.out.println(" net salary = "+ netsalary);
-    } else if (category.equalsIgnoreCase("businessman")){
+    } else if (category.equals("businessman")){
         if (income <= 2500000)
             tax = 0.15;
     else if (income <= 3500000)
