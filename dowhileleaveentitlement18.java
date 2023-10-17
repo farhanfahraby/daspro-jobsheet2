@@ -13,10 +13,19 @@ public class dowhileleaveentitlement18 {
             confirmation = sc18.next();
             
             
+             if (confirmation.equalsIgnoreCase("t")) {
+                 System.out.println("program stopp");
+                 break;
+            }
             if (confirmation.equalsIgnoreCase("y")) {
                 System.out.println("num leave");
-                numleave = sc18.nextInt();
+            
+               
+               
 
+            
+                numleave = sc18.nextInt();
+               
                 if (numleave <= leaveentitlement){
                     leaveentitlement -= numleave;
                     System.out.println("remaining leave allowance" + leaveentitlement);
@@ -24,7 +33,7 @@ public class dowhileleaveentitlement18 {
                     System.out.println("sisa jatah cuti anda tidak mencukupi");
                     break;
                 }
-            }
+            } 
         } while (leaveentitlement > 0);
 
     }
