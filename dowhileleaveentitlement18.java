@@ -5,8 +5,8 @@ public class dowhileleaveentitlement18 {
         int leaveentitlement = 12,numleave;
         String confirmation;
 
-        System.out.println("leave entitlement");
-        leaveentitlement = sc18.nextInt();
+        System.out.println("leave entitlement" + leaveentitlement);
+       
 
         do {
             System.out.println("do you want to take time off (y/t)");
@@ -19,22 +19,18 @@ public class dowhileleaveentitlement18 {
             }
             if (confirmation.equalsIgnoreCase("y")) {
                 System.out.println("num leave");
-            
-               
-               
-
-            
                 numleave = sc18.nextInt();
                
                 if (numleave <= leaveentitlement){
                     leaveentitlement -= numleave;
                     System.out.println("remaining leave allowance" + leaveentitlement);
                 } else {
-                    System.out.println("sisa jatah cuti anda tidak mencukupi");
-                    break;
+                    System.out.println("The number of leave days requested is greater than the remaining entitlement.");
+                    System.out.println("Please enter a valid number of leave days within your entitlement.");
                 }
             } 
-        } while (leaveentitlement > 0);
-
+        }while (true); // Continuously prompt the user
+        System.out.println("Program ended.");
     }
+    
 }
