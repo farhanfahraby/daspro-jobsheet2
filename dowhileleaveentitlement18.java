@@ -15,7 +15,7 @@ public class dowhileleaveentitlement18 {
             
              if (confirmation.equalsIgnoreCase("t")) {
                  System.out.println("program stopp");
-                 break;
+                 return;
             }
             if (confirmation.equalsIgnoreCase("y")) {
                 System.out.println("num leave");
@@ -30,7 +30,7 @@ public class dowhileleaveentitlement18 {
                 }
             } 
         }while (true); // Continuously prompt the user
-        System.out.println("Program ended.");
+        
     }
     
 }
