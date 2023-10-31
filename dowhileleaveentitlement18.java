@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class dowhileleaveentitlement18 {
     public static void main(String[] args) {
-        Scanner sc18 = new Scanner (System.in);
+        Scanner input18 = new Scanner (System.in);
         int leaveentitlement = 12,numleave;
         String confirmation;
 
@@ -10,7 +10,7 @@ public class dowhileleaveentitlement18 {
 
         do {
             System.out.println("do you want to take time off (y/t)");
-            confirmation = sc18.next();
+            confirmation = input18.next();
             
             
              if (confirmation.equalsIgnoreCase("t")) {
@@ -19,7 +19,7 @@ public class dowhileleaveentitlement18 {
             }
             if (confirmation.equalsIgnoreCase("y")) {
                 System.out.println("num leave");
-                numleave = sc18.nextInt();
+                numleave = input18.nextInt();
                
                 if (numleave <= leaveentitlement){
                     leaveentitlement -= numleave;
