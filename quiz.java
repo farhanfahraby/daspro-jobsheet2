@@ -12,11 +12,18 @@ public class quiz {
                 System.out.print("tebak angka(1-10):");
                 int answer = input.nextInt();
                 input.nextLine();
-                success = (answer==number);
+                
+                
+                if (answer==number){
+                    success = true;
+                }else {
+                    System.out.println("tebakan Anda" + (answer < number ? "lebih kecil " : "lebih besar") + "dari jawaban. ");
+                }
+                
             }while(!success);
             System.out.println("apakah anda ingin mengulang permainan (Y/y?)");
             menu = input.nextLine().charAt(0);
-        }while(menu=='y'|| menu =='Y');
+        }while(menu=='y' || menu =='Y');
         
     }
 }
